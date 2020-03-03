@@ -1,0 +1,97 @@
+2020-02-28 20:08:10,220 ERROR: Exception on /index [GET] [in /home/deniza/microblog/venv/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/deniza/microblog/app/routes.py", line 41, in index
+    prev_url=prev_url)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/loaders.py", line 129, in load
+    code = environment.compile(source, name, filename)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/deniza/microblog/app/templates/index.html", line 5, in template
+    {{ <h1> _('Hi'), {{ current_user.username }}! }}</h1>
+jinja2.exceptions.TemplateSyntaxError: unexpected '<'
+2020-02-28 20:09:55,888 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:51]
+2020-02-28 20:09:58,809 ERROR: Exception on /index [GET] [in /home/deniza/microblog/venv/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/deniza/microblog/app/routes.py", line 41, in index
+    prev_url=prev_url)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/loaders.py", line 129, in load
+    code = environment.compile(source, name, filename)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/deniza/microblog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/deniza/microblog/app/templates/index.html", line 5, in template
+    <h1> {{ _('Hi'), {{current_user.username}} !</h1>
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2020-02-28 20:10:22,737 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:51]
+2020-02-28 20:12:37,279 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:51]
+2020-02-28 20:14:39,370 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:51]
+2020-03-01 00:22:56,685 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-01 00:25:15,244 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 17:43:08,568 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 17:45:15,385 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 17:54:55,674 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 18:09:30,534 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 18:10:21,939 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 19:40:46,402 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 19:41:17,010 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 19:42:51,124 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 19:45:06,205 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 19:47:04,297 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 19:48:55,191 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 19:50:21,468 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 19:52:36,623 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 19:54:29,304 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 19:55:10,861 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:70]
+2020-03-02 19:58:02,379 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:73]
+2020-03-03 01:53:16,436 INFO: Microblog startup [in /home/deniza/microblog/app/__init__.py:76]
